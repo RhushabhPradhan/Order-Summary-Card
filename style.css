@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --pri-Pale-blue: #e0e8ff;
+  --pri-Bright-blue: #3829e0;
+
+  --neu-pale-blue: #f5f7ff;
+  --neu-Desaturated-blue: #7280a7;
+  --neu-Dark-blue: #1f2f56;
+
+  --fs-reg: 16px;
+
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-900: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  background-image: url(./images/pattern-background-desktop.svg);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-color: var(--pri-Pale-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 37em;
+  width: 26.4em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background: var(--neu-pale-blue);
+}
+.illustration-hero {
+  height: 20em;
+  width: 26.4em;
+  background-image: url(./images/illustration-hero.svg);
+  position: relative;
+}
+.woman-illustration {
+  width: 26.4em;
+}
+.order-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1em;
+  margin-bottom: 1.6em;
+  height: 100%;
+}
+
+.order-title {
+  font-weight: var(--fw-900);
+  font-size: 1.68rem;
+  color: var(--neu-Dark-blue);
+}
+.order-desc {
+  margin-top: -1em;
+  margin-bottom: 1em;
+  font-size: 15px;
+  line-height: 1.4;
+  padding-left: 4.6em;
+  color: var(--neu-Desaturated-blue);
+  padding-right: 4.6em;
+}
+.plan-card {
+  display: flex;
+  margin-top: -1em;
+  margin-bottom: -1em;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 18em;
+  padding: 1em;
+  background: #e0e8ff81;
+  border-radius: 0.7em;
+}
+.music-title {
+  display: flex;
+  justify-content: space-between;
+  width: 53%;
+}
+.plan-title {
+  color: var(--neu-Dark-blue);
+  font-size: var(--fs-reg);
+  font-weight: var(--fw-900);
+}
+.amount {
+  font-size: var(--fs-reg);
+  font-weight: var(--fw-500);
+  color: var(--neu-Desaturated-blue);
+}
+.music-icon {
+  width: 2.7em;
+  height: 2.7em;
+}
+.change-plan p {
+  font-size: 13px;
+  color: var(--pri-Bright-blue);
+  font-weight: var(--fw-900);
+}
+.change-plan:hover {
+  text-decoration: none;
+}
+.change-plan p:hover {
+  color: #776df1;
+}
+.pay-btn {
+  margin-top: 1em;
+  cursor: pointer;
+  background: var(--pri-Bright-blue);
+  color: var(--neu-pale-blue);
+  padding: 1em;
+  width: 80%;
+  border-radius: 1em;
+  font-size: 14px;
+  border: 0;
+  letter-spacing: 0.05em;
+  font-weight: var(--fw-700);
+  filter: drop-shadow(0px 5px 20px #1f2f568f);
+}
+.pay-btn:hover {
+  background: #776df1;
+}
+
+.order-can {
+  text-decoration: none;
+  color: #1f2f56a8;
+  letter-spacing: 0.6px;
+  font-size: 13px;
+  font-weight: var(--fw-900);
+}
+
+.order-can:hover {
+  color: var(--neu-Dark-blue);
+}
+
+@media (max-width: 375px) {
+  .container {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+  .card {
+    padding: 0 1em;
+  }
+}
